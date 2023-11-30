@@ -1,0 +1,105 @@
+
+# cool examples from cool people @ MPI-EVA
+
+# https://github.com/HedvigS/Oceanic_computational_ASR
+# https://github.com/paleobiotechnology/analysis-project-structure
+# https://github.com/babeheim/moralizing-gods-reanalysis
+# https://github.com/fhillemann/harvest
+
+# commands to navigate the file system
+
+pwd
+ls
+cd ~/Desktop
+
+
+# configuation settings (typically only need to set these once)
+
+git config --global user.name "Bret Beheim"
+git config --global user.email "bret_beheim@eva.mpg.de"
+git config --global core.editor "nano -w"
+git config --list
+git config --global core.autocrlf input # for mac/linux
+git config --global core.autocrlf true # for windows
+
+
+# working with the day3 example folder
+
+git init
+git status
+git add "analysis clean.R"
+git add "data processing script.R" 
+git commit
+
+git log
+git log --oneline
+
+git ls-tree
+git ls-tree -r master
+
+git add analysis.R
+git status
+git add "analysis clean.R"
+git status
+git add "data processing script.R"
+git status
+git add "data_processing_script.R"
+git status
+git commit -m "renamed two files"
+git log
+
+git status
+git add .gitignore
+git commit -m "added a gitignore file"
+git status
+git add analysis.R
+git status
+git diff analysis.R
+git commit -m "removed a few lines of code from analysis.R"
+git status
+git diff analysis.R
+git log --oneline
+git log analysis.R
+
+
+# checking out files from past commits
+
+git checkout d5c8e1f  # this is not a good command, will check out the entire folder and create a "detached head"
+git checkout master # how to get back to the master branch
+git log
+git checkout d5c8e1f analysis.R # how to check out one specific file
+git status
+git checkout 98d6cf3 analysis.R
+git checkout 98d6cf3 "analysis clean.R"
+git log analysis.R
+git diff d5c8e1f 4265e85 analysis.R
+git log analysis.R
+git status
+
+git add "analysis clean.R"
+git add "analysis_data.tsv"
+git add analysis.R
+git add data_processing_script.R 
+
+git status
+git add 1_data_processing_script.R 
+git add 2_analysis.R 
+
+git status
+git add 01_data_processing_script.R 
+git add 02_analysis.R 
+
+git status
+git add 1_data_processing_script.R 
+git add 2_analysis.R 
+
+git status
+git add README.txt
+
+git commit -m "updated file names for clarity"
+git log
+git status
+
+git remote add origin https://github.com/babeheim/bret-swc-example-2023.git
+git status
+git pull origin main
