@@ -104,3 +104,6 @@ git status
 git remote add origin https://github.com/babeheim/bret-swc-example-2023.git
 git status
 git pull origin main
+
+# the resulting cleaned-up version of the workflow:
+# https://github.com/babeheim/bret-swc-example-2023
