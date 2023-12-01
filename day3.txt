@@ -5,6 +5,7 @@
 # https://github.com/paleobiotechnology/analysis-project-structure
 # https://github.com/babeheim/moralizing-gods-reanalysis
 # https://github.com/fhillemann/harvest
+# https://github.com/LEK85
 
 # commands to navigate the file system
 
